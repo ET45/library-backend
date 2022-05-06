@@ -1,8 +1,10 @@
 const express = require("express");
+const corsMiddleWare = require("cors");
 
 const Game = require("./models/").game;
 
 const app = express();
+app.use(corsMiddleWare());
 
 const port = 4000;
 
